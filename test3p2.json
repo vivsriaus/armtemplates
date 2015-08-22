@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "siteName": {
-            "value": "xDeploymentTfestSite16415"
+            "value": "xDeploymerentTfestSite16415"
         },
         "hostingPlanName": {
-            "value": "xDeploymentTesftHost26668"
+            "value": "xDeploymentTesftHertost26668"
         },
         "siteLocation": {
             "value": "West US"
