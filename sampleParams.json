@@ -1,0 +1,27 @@
+{
+"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+"contentVersion": "1.0.0.0",
+"parameters": {
+"newStorageAccountName": {
+"value": "asddsaf12423"
+},
+"adminUsername": {
+"value": "test-user"
+},
+"adminPassword": {
+"value": "sdfdsaf@43AS"
+},
+"dnsNameForPublicIP": {
+"value": "sdfdsf2q3"
+},
+"ubuntuOSVersion": {
+"value": "15.04"
+},
+"slaveCount": {
+"value": 3
+},
+"swarmClusterId": {
+"value": "7f92fef2f4476d5694bd6c76fd756c0f"
+}
+}
+}
