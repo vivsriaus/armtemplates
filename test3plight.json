@@ -1,0 +1,14 @@
+{
+  "hostingPlanName": {
+    "value": "xDeploymentTestHost212"
+  },
+  "siteLocation": {
+    "value": "West US"
+  },
+  "sku": {
+    "value": "Standard"
+  },
+  "workerSize": {
+    "value": 0
+  }
+}
