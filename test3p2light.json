@@ -4,19 +4,24 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "siteName": {
-            "value": "xDeploymentTeddstSite16415"
+            "value": "xDeploymentTeddstSite16415",
+            "type": "string"
         },
         "hostingPlanName": {
-            "value": "xDeploymdeddntTestHost26668"
+            "value": "xDeploymdeddntTestHost26668",
+            "type": "string"
         },
         "siteLocation": {
-            "value": "West US"
+            "value": "West US",
+            "type": "string"
         },
         "sku": {
-            "value": "Basic"
+            "value": "Basic",
+            "type": "string"
         },
         "workerSize": {
-            "value": 0
+            "value": 0,
+            "type": "int"
         }
     }
 }
