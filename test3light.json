@@ -16,7 +16,7 @@
         "Basic",
         "Standard"
       ],
-      "defaultValue": "Free"
+      "defaultValue": "Basic"
     },
     "workerSize": {
       "type": "int",
