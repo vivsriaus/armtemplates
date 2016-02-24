@@ -25,5 +25,56 @@
 				}
 			}
 		}
+	},
+	{
+		"apiVersion": "2015-01-01",
+		"name": "nestedTemplate2",
+		"type": "Microsoft.Resources/deployments",
+		"properties": {
+			"mode": "incremental",
+			"templateLink": {
+				"uri": "[variables('templatelink')]",
+				"contentVersion": "1.0.0.0"
+			},
+			"parameters": {
+				"StorageAccountName": {
+					"value": "[parameters('StorageAccountName')]"
+				}
+			}
+		}
+	},
+	{
+		"apiVersion": "2015-01-01",
+		"name": "nestedTemplate3",
+		"type": "Microsoft.Resources/deployments",
+		"properties": {
+			"mode": "incremental",
+			"templateLink": {
+				"uri": "[variables('templatelink')]",
+				"contentVersion": "1.0.0.0"
+			},
+			"parameters": {
+				"StorageAccountName": {
+					"value": "[parameters('StorageAccountName')]"
+				}
+			}
+		}
+	},
+	{
+		"apiVersion": "2015-01-01",
+		"name": "nestedTemplate4",
+		"type": "Microsoft.Resources/deployments",
+		"properties": {
+			"mode": "incremental",
+			"templateLink": {
+				"uri": "[variables('templatelink')]",
+				"contentVersion": "1.0.0.0"
+			},
+			"parameters": {
+				"StorageAccountName": {
+					"value": "[parameters('StorageAccountName')]"
+				}
+			}
+		}
 	}]
 }
