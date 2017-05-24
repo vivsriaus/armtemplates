@@ -1,0 +1,96 @@
+{
+  "name": "Build Definition for Solution Templates - repository - ",
+  "type": "build",
+  "quality": "definition",
+  "queue": {
+    "pool": {
+      "id": 2,
+      "name": "Hosted"
+    },
+    "id": 2,
+    "name": "Hosted"
+  },
+  "jobTimeoutInMinutes": 120,
+  "build": [
+    {
+      "enabled": true,
+      "continueOnError": false,
+      "alwaysRun": false,
+      "displayName": "npm install",
+      "task": {
+        "id": "fe47e961-9fa8-4106-8639-368c022d43ad",
+        "versionSpec": "*"
+      },
+      "inputs": {
+        "command": "install",
+        "arguments": "",
+        "cwd": ""
+      }
+    },
+    {
+      "enabled": true,
+      "continueOnError": false,
+      "alwaysRun": false,
+      "displayName": "PowerShell Script",
+      "timeoutInMinutes": 0,
+      "task": {
+        "id": "e213ff0f-5d5c-4791-802d-52ea3e7be1f1",
+        "versionSpec": "1.*",
+        "definitionType": "task"
+      },
+      "inputs": {
+        "scriptType": "filePath",
+        "scriptName": "SetBranchNameVariable.ps1",
+        "arguments": "",
+        "inlineScript": "",
+        "workingFolder": "",
+        "failOnStandardError": "true"
+      }
+    },
+    {
+      "enabled": true,
+      "continueOnError": false,
+      "alwaysRun": false,
+      "displayName": "grunt ",
+      "task": {
+        "id": "521d1e15-f5fb-4b73-a93b-b2fe88a9a286",
+        "versionSpec": "*"
+      },
+      "inputs": {
+        "gruntFile": "gruntfile.js",
+        "targets": "",
+        "arguments": "test",
+        "cwd": "",
+        "gruntCli": "node_modules/grunt-cli/bin/grunt"
+      }
+    }
+  ],
+  "options": [
+    {
+      "enabled": true,
+      "definition": {
+        "id": "57578776-4c22-4526-aeb0-86b6da17ee9c"
+      },
+      "inputs": {
+        "additionalFields": "{}"
+      }
+    }
+  ],
+      "repository": {
+        "properties": {
+          "labelSources": "0",
+          "reportBuildStatus": "true"
+        },
+        "type": "tfsgit",
+        "name": "",
+        "id": ""
+      },
+      "variables": {
+        "system.debug": {
+          "value": "true",
+          "allowOverride": true
+        }
+      },
+      "triggers": [],
+      "comment": "Generated Build Definition for ARM Template Validation"
+    }
